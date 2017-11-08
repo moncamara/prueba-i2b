@@ -5,8 +5,8 @@ html(lang='es')
 		meta(charset='utf-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		title Prueba i2b
-
 		link(rel='stylesheet', href='css/styles.css')
+		link(rel='stylesheet', href='https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css')
 
 	body
 		.content
@@ -17,7 +17,8 @@ html(lang='es')
 					.nav-nav
 						ul
 							li
-								a(href="#") INICIO
+								a.active(href="#") INICIO
+								img(src="img/activo.png")
 							li
 								a(href="#") QUIÉNES SOMOS
 							li
@@ -30,9 +31,11 @@ html(lang='es')
 								a(href="#") BLOG
 							li
 								a(href="#") ESCRÍBENOS
+			
 			.slider
-				.sl-img
-					img(src="img/slider.png")
+				<img src="img/slider.png">
+				<img src="img/slider.png">
+				<img src="img/slider.png">
 
 			.articles
 
@@ -133,3 +136,8 @@ html(lang='es')
 						.clear
 
 						p I2B Intelligence to Business S.A. Algunos derechos reservados.
+
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js")
+		script(src="js/index.js")

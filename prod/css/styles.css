@@ -24,6 +24,22 @@ a {
   font-family: "majallab";
   src: url(../fonts/majallab.ttf); }
 
+.bx-wrapper {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  background: none !important; }
+
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+  display: none; }
+
 .clear {
   clear: both; }
 
@@ -33,6 +49,9 @@ a {
     width: 80%;
     height: 120px;
     margin: 0 auto; }
+    @media screen and (max-width: 1024px) {
+      .content .nav {
+        width: 90%; } }
     .content .nav .nav-logo {
       float: left;
       width: 35%;
@@ -41,6 +60,7 @@ a {
       width: 65%;
       float: right; }
       .content .nav .nav-nav ul li {
+        position: relative;
         float: left;
         margin-right: 20px;
         margin-top: 80px; }
@@ -49,11 +69,23 @@ a {
           font-family: majallab; }
           .content .nav .nav-nav ul li a:hover {
             color: #cc0000; }
-  .content .slider img {
+        .content .nav .nav-nav ul li a.active {
+          color: #cc0000; }
+        .content .nav .nav-nav ul li img {
+          position: absolute;
+          top: 30px;
+          left: -12px;
+          z-index: 1; }
+  .content .slider {
     width: 100%; }
+    .content .slider img {
+      width: 100%; }
   .content .articles {
     width: 80%;
     margin: 0 auto; }
+    @media screen and (max-width: 1024px) {
+      .content .articles {
+        width: 90%; } }
     .content .articles .article {
       overflow: hidden;
       padding: 40px 0 40px 0;
@@ -73,6 +105,9 @@ a {
         float: left;
         width: 83%;
         margin-left: 20px; }
+        @media screen and (max-width: 1024px) {
+          .content .articles .article .us-content, .content .articles .article .work-content, .content .articles .article .succ-content {
+            width: 80%; } }
         .content .articles .article .us-content .box-us p, .content .articles .article .work-content .box-us p, .content .articles .article .succ-content .box-us p {
           color: #666;
           font-size: 16px;
