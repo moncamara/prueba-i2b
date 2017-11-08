@@ -1,0 +1,234 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	font-size: 16px;
+}
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	color: #000;
+}
+
+@font-face{
+	font-family: "majallab";
+	src: url(../fonts/majallab.ttf);
+}
+
+.clear{
+	clear: both;
+}
+
+.content{
+	background-color: #fff;
+
+	.nav{
+		width: 80%;
+		height: 120px;
+		margin: 0 auto;
+
+		.nav-logo{
+			float: left;
+			width: 35%;
+			margin-top: 20px;
+		}
+
+		.nav-nav{
+			width: 65%;
+			float: right;
+
+			ul{
+				li{
+					float: left;
+					margin-right: 20px;
+					margin-top: 80px;
+
+					a{
+						font-size: 16px;
+						font-family: majallab;
+
+						&:hover{
+							color: #cc0000;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slider{
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.articles{
+		width: 80%;
+		margin: 0 auto;
+
+		.article{
+			overflow: hidden;
+			padding: 40px 0 40px 0;
+			border-bottom: 1px solid #ccc;
+			
+
+			.art-img{
+				float: left;
+				width: 15%;
+
+				img{
+					width: 100%;
+				}
+			}
+
+			h3.title{
+				width: 85%;
+				font-family: majallab;
+				font-size: 48px;
+			}
+
+			&:last-child{
+				border-bottom: none;
+			}
+
+			.us-content, .work-content, .succ-content{
+					float: left;
+					width: 83%;
+					margin-left: 20px;
+				.box-us{
+					p{
+						color: #666;
+						font-size: 16px;
+						margin-bottom: 30px;
+						text-align: justify;
+
+						span{
+							font-weight: bold;
+							color: #000;
+						}
+					}
+				}
+			}
+
+			.work-content{
+				.box-work{
+					float: left;
+
+					.devel{
+						position: relative;
+						float: left;
+						border-radius: 50%;
+						background-color: #ccc;
+						width: 167px;
+						height: 167px;
+						text-align: center;
+
+						.work-img{
+							height: 40px;
+							padding-top: 15px;
+						}
+
+						.work-title{
+							font-size: 11px;
+							color: #666;
+							font-weight: bold;
+						}
+
+						.work-texto{
+							font-size: 11px;
+							color: #666;
+							padding: 10px;
+						}
+						img.next{
+							position: absolute;
+							top: 70px;
+							left: 155px;
+							z-index: 1;
+						}
+					}
+				}
+
+			}
+
+			.succ-content{
+				overflow: hidden;
+
+				.box-success{
+					float: left;
+					margin-bottom: 30px;
+
+					img{
+						float: left;
+						width: 10%;
+					}
+					p{
+						float: left;
+						width: 78%;
+						margin-left: 10px;
+						color: #666;
+					}
+				}
+				.firma{
+					p.nombre{
+						text-align: right;
+						font-size: 16px;
+						color: #000;
+					}
+					p.cargo{
+						text-align: right;
+						font-size: 16px;
+						color: #666;
+					}
+				}
+			}
+
+			
+		}		
+
+	}
+
+	.footer{
+		height: 137px;
+		background-color: #000;
+		border-top: 10px solid #cc0000;
+		
+		.box-footer{
+			width: 80%;
+			margin: 0 auto;
+			padding-top: 50px;
+
+			.paises{
+				width: 50%;
+				ul{
+					float: left;
+					margin-left: 50px;
+					li{
+						color: #fff;
+						font-size: 11px;
+					}
+					li:first-child, li:last-child{
+						font-size: 16px;
+					}
+				}
+			}
+
+			.redes{
+				float: right;
+				img{
+					float: right;
+
+				}
+				p{
+					color: #fff;
+					font-size: 11px;
+					margin-top: 16px;
+				}
+			}
+
+		}
+	}
+}
