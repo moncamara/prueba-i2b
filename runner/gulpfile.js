@@ -8,7 +8,8 @@ var imagemin = require('gulp-imagemin');
 gulp.task('pug', function() {
    return gulp.src('../source/pug/*.pug')
   .pipe(pug())
-  .pipe(gulp.dest('../dev/'))		
+  .pipe(gulp.dest('../dev/'))	
+  .pipe(gulp.dest('../prod/'))	
 });
 
 gulp.task('sass', function(){
@@ -16,22 +17,26 @@ gulp.task('sass', function(){
     .pipe(sass())
    // .pipe(minifyCSS())
     .pipe(gulp.dest('../dev/css'))
+    .pipe(gulp.dest('../prod/css'))
 });
 
 gulp.task('js', function(){
   return gulp.src('../source/js/*.js')
   .pipe(gulp.dest('../dev/js'))
+  .pipe(gulp.dest('../prod/js'))
 });
 
 gulp.task('images', () =>
     gulp.src('../source/img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('../dev/img'))
+        .pipe(gulp.dest('../prod/img'))
 );
 
 gulp.task('fonts', function(){
   return gulp.src('../source/fonts/*')
   .pipe(gulp.dest('../dev/fonts'))
+  .pipe(gulp.dest('../prod/fonts'))
 });
 
 
