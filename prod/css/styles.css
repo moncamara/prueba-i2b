@@ -40,6 +40,9 @@ a {
   padding-top: 20px;
   display: none; }
 
+.bx-wrapper {
+  margin-bottom: 0 !important; }
+
 .clear {
   clear: both; }
 
@@ -56,9 +59,15 @@ a {
       float: left;
       width: 35%;
       margin-top: 20px; }
+      @media screen and (max-width: 1024px) {
+        .content .nav .nav-logo {
+          float: none; } }
     .content .nav .nav-nav {
       width: 65%;
       float: right; }
+      @media screen and (max-width: 1024px) {
+        .content .nav .nav-nav {
+          width: 100%; } }
       .content .nav .nav-nav ul li {
         position: relative;
         float: left;
@@ -67,6 +76,9 @@ a {
         .content .nav .nav-nav ul li a {
           font-size: 16px;
           font-family: majallab; }
+          @media screen and (max-width: 1024px) {
+            .content .nav .nav-nav ul li a {
+              font-size: 25px; } }
           .content .nav .nav-nav ul li a:hover {
             color: #cc0000; }
         .content .nav .nav-nav ul li a.active {
@@ -76,6 +88,9 @@ a {
           top: 30px;
           left: -12px;
           z-index: 1; }
+          @media screen and (max-width: 1024px) {
+            .content .nav .nav-nav ul li img {
+              left: -5px; } }
   .content .slider {
     width: 100%; }
     .content .slider img {
@@ -126,6 +141,10 @@ a {
           width: 167px;
           height: 167px;
           text-align: center; }
+          @media screen and (max-width: 1024px) {
+            .content .articles .article .work-content .box-work .devel {
+              width: 147px;
+              height: 147px; } }
           .content .articles .article .work-content .box-work .devel .work-img {
             height: 40px;
             padding-top: 15px; }

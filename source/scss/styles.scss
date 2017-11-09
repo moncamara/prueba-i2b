@@ -42,6 +42,9 @@ a{
     padding-top: 20px;
     display: none;
 }
+.bx-wrapper{
+	margin-bottom: 0!important;
+}
 
 .clear{
 	clear: both;
@@ -63,11 +66,19 @@ a{
 			float: left;
 			width: 35%;
 			margin-top: 20px;
+
+			@media screen and (max-width: 1024px) {
+				float: none;
+			}
 		}
 
 		.nav-nav{
 			width: 65%;
 			float: right;
+
+			@media screen and (max-width: 1024px) {
+				width: 100%;
+			}
 
 			ul{
 				li{
@@ -79,6 +90,10 @@ a{
 					a{
 						font-size: 16px;
 						font-family: majallab;
+
+						@media screen and (max-width: 1024px) {
+							font-size: 25px;
+						}
 
 						&:hover{
 							color: #cc0000;
@@ -95,6 +110,10 @@ a{
 						top: 30px;
 						left: -12px;
 						z-index: 1;
+
+						@media screen and (max-width: 1024px) {
+							left: -5px;
+						}
 					}
 				}
 			}
@@ -177,6 +196,11 @@ a{
 						height: 167px;
 						text-align: center;
 
+						@media screen and (max-width: 1024px) {
+							width: 147px;
+							height: 147px;
+						}
+
 						.work-img{
 							height: 40px;
 							padding-top: 15px;
@@ -198,6 +222,11 @@ a{
 							top: 70px;
 							left: 155px;
 							z-index: 1;
+
+							@media screen and (max-width: 1024px) {
+								top: 55px;
+								left: 130px;
+							}
 						}
 					}
 				}
